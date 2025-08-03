@@ -34,7 +34,7 @@ header {
   justify-content: space-between;
 
   align-items: center;
-  border: 2px solid #561612;
+  border: 2px solid #21AD26;
   background-color: #1C1B1B;
   /*padding: 1rem 1rem 1rem 1rem;*/
 }
@@ -101,7 +101,7 @@ header {
   line-height: 1.9rem;
   color: rgb(216, 47, 47);
   font-weight: bolder;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .home-content button {
@@ -194,7 +194,7 @@ footer {
   }
 
   .home-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .home-content button {
