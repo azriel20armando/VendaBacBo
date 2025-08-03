@@ -189,12 +189,11 @@ footer {
   }
 
   .home-content {
-    text-align: left;
     padding: 2rem;
   }
 
   .home-content p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .home-content button {
