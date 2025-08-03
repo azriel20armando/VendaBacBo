@@ -16,6 +16,7 @@ body {
 header {
   position: fixed;
   width: 100%;
+  z-index: 1;
   padding: 0.8rem 0.8rem 0.8rem 1.8rem;
   background-color: #2A2727;
   color: #DC2A1E;
@@ -96,6 +97,15 @@ header {
   margin-bottom: 2rem;
 }
 
+footer {
+  margin-top: 3rem;
+  background-color: #2A2727;
+  padding: 1.5rem;
+  color: #DC2A1E;
+  text-align: center;
+  font-weight: 500;
+}
+
 @media (max-width: 768px) {
   header {
     width: 100%;
@@ -120,5 +130,10 @@ header {
 
   .home-video video {
     width: 90%;
+  }
+
+
+  footer {
+    text-align: left;
   }
 }

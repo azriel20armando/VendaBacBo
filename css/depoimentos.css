@@ -8,28 +8,32 @@
 }
 
 .depoimentos h1 {
-  
+  padding-bottom: 2rem;
 }
 
 .container-depoimentos {
   display: flex;
-  margin: auto;
-  background-color: #2A2727;
-  border-radius: 1.3rem;
-  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .container-perfil {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.2rem;
+  justify-content: center;
+  border-radius: 1rem;
+  width: 50%;
+  padding-bottom: 3rem;
 }
 
 .comentario {
   text-align: left;
   width: 45%;
-  line-height: 1.2rem;
+  line-height: 1.9rem;
 }
+
 
 .comentario p {
   color: white;
@@ -37,17 +41,41 @@
 }
 
 .comentario span {
-  color: #561612;
-  font-size: 1rem;
+  color: #A52A2A;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .perfil-img {
+  background-size: cover;
+  background-position: center;
   padding: 4rem;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   background-color: #561612;
 }
+
+.one {
+  background-image: url(../img/perfil01.jpg);
+}
+
+.dois {
+  background-image: url(../img/perfil02.jpg);
+}
+
+.treis {
+  background-image: url(../img/perfil03.jpg);
+}
+
+.quatro {
+  background-image: url(../img/perfil04.jpg);
+}
+
+.cinco {
+  background-image: url(../img/perfil05.jpg);
+}
+
 
 
 
@@ -62,6 +90,11 @@
   }
 
   .comentario {
-  flex-direction: column;
+    flex-direction: column;
+  }
+
+  .container-perfil {
+    flex-direction: column;
+    width: 100%;
   }
 }
