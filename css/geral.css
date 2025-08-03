@@ -1,0 +1,124 @@
+@font-face {
+  font-family: Mont;
+  src: url(../font/Karla-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Mont;
+}
+
+body {
+  background-color: #1C1B1B;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 0.8rem 0.8rem 0.8rem 1.8rem;
+  background-color: #2A2727;
+  color: #DC2A1E;
+  font-weight: 600;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-time {
+  width: 30%;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  border: 2px solid #561612;
+  background-color: #1C1B1B;
+  /*padding: 1rem 1rem 1rem 1rem;*/
+}
+
+
+.button-time .um {
+  padding-left: 1.5rem;
+  color: white;
+}
+
+.button-time .dois {
+  background-color: #2A2727;
+  border: 2px solid #B9251B;
+  padding: 0.3rem 1.7rem 0.3rem 1.7rem;
+  margin: 0.5rem;
+  border-radius: 2rem;
+}
+
+.home-content {
+  padding-top: 2rem;
+  display: flex; 
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-video {
+  display: flex;
+  justify-content: center;
+}
+
+.home-video video {
+  width: 50%;
+  border-radius: 1.3rem;
+  border: 2px solid #561612;
+}
+
+.home-content .paragrafo {
+  padding-top: 5rem;
+}
+
+.home-content p {
+  line-height: 1.9rem;
+  color: rgb(216, 47, 47);
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.home-content button {
+  background-color: #561612;
+  border: 1px solid #B9251B;
+  border-radius: 2rem;
+  width: 40%;
+  padding: 1rem;
+  margin: auto;
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  .button-time {
+    width: 85%;
+  }
+
+  .home-content {
+    text-align: left;
+    padding: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1.2rem;
+  }
+
+  .home-content button {
+    width: 100%;
+  }
+
+  .home-video video {
+    width: 90%;
+  }
+}

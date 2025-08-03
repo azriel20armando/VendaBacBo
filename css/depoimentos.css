@@ -1,0 +1,67 @@
+.depoimentos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: brown;
+  font-size: 2rem;
+  padding-top: 3rem;
+}
+
+.depoimentos h1 {
+  
+}
+
+.container-depoimentos {
+  display: flex;
+  margin: auto;
+  background-color: #2A2727;
+  border-radius: 1.3rem;
+  padding: 1rem;
+}
+
+.container-perfil {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.comentario {
+  text-align: left;
+  width: 45%;
+  line-height: 1.2rem;
+}
+
+.comentario p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.comentario span {
+  color: #561612;
+  font-size: 1rem;
+}
+
+.perfil-img {
+  padding: 4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #561612;
+}
+
+
+
+@media (max-width: 768px) {
+  .depoimentos h1 {
+    text-align: left;
+  }
+
+  .depoimentos {
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  .comentario {
+  flex-direction: column;
+  }
+}
