@@ -46,11 +46,31 @@ header {
 }
 
 .button-time .dois {
-  background-color: #2A2727;
+  background-color: red;
   border: 2px solid #B9251B;
   padding: 0.3rem 1.7rem 0.3rem 1.7rem;
   margin: 0.5rem;
   border-radius: 2rem;
+}
+
+.btn-flash {
+  padding: 12px 24px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
 }
 
 .home-content {
@@ -86,7 +106,8 @@ header {
 
 .home-content button {
   background-color: #561612;
-  border: 1px solid #B9251B;
+  
+  /*border: 1px solid #B9251B;*/
   border-radius: 2rem;
   width: 40%;
   padding: 1rem;
@@ -104,6 +125,58 @@ footer {
   color: #DC2A1E;
   text-align: center;
   font-weight: 500;
+}
+
+.btn-pagamento {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: 15px 70px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+/* Criar o arco-íris animado */
+.btn-pagamento::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  z-index: -1;
+  background: linear-gradient(45deg,
+    red, orange, yellow, green, cyan, blue, violet, red);
+  background-size: 400%;
+  border-radius: 10px;
+  animation: rainbow 4s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Criar um fundo "sólido" dentro, como se fosse um botão com borda */
+.btn-pagamento::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  background-color: #000;
+  border-radius: 6px;
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
